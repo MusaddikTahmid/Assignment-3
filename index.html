@@ -20,28 +20,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- styles -->
     <style>
-        body{
-            font-family: 'Manrope', sans-serif;
-        }
+      body {
+        font-family: "Manrope", sans-serif;
+      }
     </style>
     <!-- extra style -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                color: '#FF4240',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              color: "#FF4240",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <header class="container relative mx-auto">
-        <!-- navbar -->
-      <div class="navbar bg-base-100">
+    <header class="container lg:px-28 px-5 mx-auto lg:space-y-14 lg:mt-14">
+      <!-- navbar -->
+      <div class="navbar w-full bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -64,18 +64,20 @@
               tabindex="0"
               class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Pages</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Content</a></li>
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Content</a></li>
             </ul>
           </div>
-          <a class=" text-xl lg:text-4xl font-extrabold">Hockey<span class="text-color">’</span>s</a>
+          <a class="text-xl lg:text-4xl font-extrabold"
+            >Hockey<span class="text-color">’</span>s</a
+          >
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal lg:font-extrabold px-1">
-            <li  class="text-color"><a>Home</a></li>
+            <li class="text-color"><a>Home</a></li>
             <li><a>About</a></li>
             <li><a>Pages</a></li>
             <li><a>Blog</a></li>
@@ -83,26 +85,95 @@
           </ul>
         </div>
         <div class="navbar-end">
-            <img class="sm:hidden" src="Images/Frame.png" alt="">
+          <img class="sm:hidden" src="Images/Frame.png" alt="" />
           <a class="btn bg-color text-white">Get Ticket</a>
         </div>
       </div>
       <!-- carousel -->
-      <div class="carousel   w-full">
+      <div class="carousel relative w-full">
         <div id="slide1" class="carousel-item relative w-full">
-          <img src="Images/1.png" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" class="btn btn-circle">❮</a> 
+          <img src="Images/1.png" class="w-full h-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
         </div>
-        <div class="bg-black absolute lg:p-8 rounded-2xl lg:w-[502px] lg:bottom-7 lg:right-7">
-            <h2 class="font-extrabold text-2xl text-white">Meet all the heroes from the field</h2>
-            <p class="text-[#FFFFFF99] mt-4"> A modern-day superstar, Crosby has led the Pittsburgh Penguins to multiple championships and is known for his exceptional skill and leadership.</p>
+        <!-- nukta section -->
+        <div
+          class="bg-black absolute lg:p-8 rounded-2xl lg:w-[502px] lg:bottom-7 lg:right-7"
+        >
+          <h2 class="font-extrabold text-2xl text-white">
+            Meet all the heroes from the field
+          </h2>
+          <p class="text-[#FFFFFF99] mt-4">
+            A modern-day superstar, Crosby has led the Pittsburgh Penguins to
+            multiple championships and is known for his exceptional skill and
+            leadership.
+          </p>
         </div>
       </div>
     </header>
-    <main></main>
+    <main class="container lg:px-28 px-5 mx-auto lg:space-y-14 lg:mt-14">
+      <!-- professional section -->
+      <div
+        class="text-center py-8 border-2 border-l-0 border-r-0 border-dashed"
+      >
+        <h1 class="lg:text-4xl text-2xl font-extrabold">
+          Professional Hockeys Club
+        </h1>
+        <p class="mt-6">
+          Many professional hockey teams engage in community outreach and social
+          responsibility <br />
+          initiatives to connect with their local communities.
+        </p>
+      </div>
+      <!-- Radial progress -->
+      <div class="grid grid-cols-1 lg:grid-cols-4 items-center my-8 lg:my-12 gap-8  justify-between w-full">
+        <div class="text-center space-y-6">
+            <div class="radial-progress text-rose-700" style="--value: 87" role="progressbar">
+                87%
+              </div>
+              <p class="text-xl font-extrabold">Prayer Facility</p>
+              <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div class="text-center space-y-6">
+            <div class="radial-progress text-green-600" style="--value: 95" role="progressbar">
+                95%
+              </div>
+              <h3 class="text-xl font-extrabold">Experienced Coach</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <div class="text-center space-y-6">
+            <div class="radial-progress text-yellow-400" style="--value: 90" role="progressbar">
+                90%
+              </div>
+              <h3 class="text-xl font-extrabold">Experienced Coach</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <div class="text-center space-y-6">
+            <div class="radial-progress text-blue-500" style="--value: 80" role="progressbar">
+                80%
+              </div>
+              <h3 class="text-xl font-extrabold">Experienced Coach</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+      </div>
+            <!-- program section -->
+            <div
+            class="text-center py-8 lg:my-14 border-2 border-l-0 border-r-0 border-dashed"
+          >
+            <h1 class="lg:text-4xl text-2xl font-extrabold">
+                Program Sections
+            </h1>
+            <p class="mt-6">
+              Many professional hockey teams engage in community outreach and social
+              responsibility <br />
+              initiatives to connect with their local communities.
+            </p>
+          </div>
+    </main>
     <footer></footer>
   </body>
 </html>
